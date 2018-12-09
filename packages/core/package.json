@@ -1,0 +1,38 @@
+{
+  "name": "@mozart/core",
+  "version": "0.1.1-alpha.0",
+  "author": "Mitch Kostelecky <mikostel@gmail.com>",
+  "homepage": "https://mozartjs.org/",
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "@mozart/column": "^0.1.1-alpha.0",
+    "@mozart/row": "^0.1.1-alpha.0",
+    "@types/react": "^16.7.13",
+    "@types/react-dom": "^16.0.11",
+    "normalize.css": "^8.0.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "clean-webpack-plugin": "^1.0.0",
+    "css-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "path": "^0.12.7",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "typescript": "^3.2.1",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack --config ./webpack.config.production.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "https://github.com/mozartjs/mozart/tree/master/packages/core"
+}

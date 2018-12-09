@@ -1,0 +1,70 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.7.0/libexec/bin/yarn.js publish
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  9.11.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/usr/local/Cellar/yarn/1.7.0/libexec/lib/cli.js:131036:13)
+      at Interface.emit (events.js:180:13)
+      at Interface._ttyWrite (readline.js:783:16)
+      at ReadStream.onkeypress (readline.js:163:10)
+      at ReadStream.emit (events.js:180:13)
+      at emitKeys (internal/readline.js:422:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1019:36)
+      at ReadStream.emit (events.js:180:13)
+      at addChunk (_stream_readable.js:274:12)
+
+npm manifest: 
+  {
+    "name": "@mozart/core",
+    "version": "0.1.0",
+    "main": "index.js",
+    "private": false,
+    "dependencies": {
+      "@mozart/column": "^0.1.0",
+      "@mozart/row": "^0.1.0",
+      "@types/react": "^16.7.13",
+      "@types/react-dom": "^16.0.11",
+      "normalize.css": "^8.0.1",
+      "react": "^16.6.3",
+      "react-dom": "^16.6.3"
+    },
+    "devDependencies": {
+      "awesome-typescript-loader": "^5.2.1",
+      "clean-webpack-plugin": "^1.0.0",
+      "css-loader": "^2.0.0",
+      "html-webpack-plugin": "^3.2.0",
+      "path": "^0.12.7",
+      "source-map-loader": "^0.2.4",
+      "style-loader": "^0.23.1",
+      "typescript": "^3.2.1",
+      "webpack": "^4.27.1",
+      "webpack-cli": "^3.1.2",
+      "webpack-dev-server": "^3.1.10"
+    },
+    "scripts": {
+      "start": "webpack-dev-server",
+      "build": "webpack --config ./webpack.config.production.js"
+    },
+    "publishConfig": {
+      "access": "public"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
